@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(33, 33, 33);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: orange;
+}
+
+.outer_circle{
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    border: orange solid 5px;    
+    position: relative;
+
+}
+.num{
+    
+}
+h2:nth-child(1){
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+h2:nth-child(2){
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+h2:nth-child(3){
+    position: absolute;
+   bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+h2:nth-child(4){
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+
+}
+
+.kattalu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vmin;
+    width: 3vmin;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 10;
+    transform: rotate(-90deg);
+}
+.big_katte{
+    height: 2vmin;
+    width: 25vmin;
+    background-color: rgb(115, 93, 51);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    /* animation-name: clock; */
+    /* animation-duration: 2s; */
+    animation:clock 3600s infinite;
+    box-shadow: black 2px 2px 2px;
+    z-index: 2;
+border-radius: 10px;
+
+
+transform-origin: left;
+}
+.med_katte{
+    height: 1.5vmin;
+    width: 18vmin;
+    background-color: rgb(165, 124, 47);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    animation:clock 86400s infinite;
+    transform-origin: left;
+    box-shadow: black 2px 2px 2px;
+    z-index: 0;
+border-radius: 10px;
+
+
+}
+.small_katte{
+    height: 1.5vmin;
+    width: 30vmin;
+    background-color: rgb(151, 99, 2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    animation:clock 60s infinite;
+    animation-timing-function: linear;
+    transform-origin: left;
+    box-shadow: black 2px 2px 2px;
+border-radius: 10px;
+    z-index: 0;
+
+
+
+}
+.paina{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3vmin;
+    width: 3vmin;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 10;
+}
